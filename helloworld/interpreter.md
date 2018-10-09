@@ -1,11 +1,22 @@
+## Headings
+
+~~~~
 >>> print 4+5
 9
+~~~~
+
+~~~~
 >>> print 5
 5
+~~~~
+
+~~~~
 >>> print hello
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'hello' is not defined
+~~~~
+
 >>> print 'hello'
 hello
 >>> print "hello"
