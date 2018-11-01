@@ -1,8 +1,8 @@
 def find_type_arguments (arg1,arg2):
-	""" Prints the type of passed two arguments
+	""" Prints the data type of passed two arguments
 		Args:
-			arg1:  Any value 
-			arg2:  Any value
+			input1:  Value with any data type like int,float,string etc..
+			input2:  Value with any data type like int,float,string etc..
 
 		Returns:
 			No return value

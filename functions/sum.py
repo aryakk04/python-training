@@ -1,14 +1,17 @@
 def sum_arguments (arg1,arg2):
 	""" Prints the sum of passed two argument
-		if both arguments have the same data type.
+		Two arguments should be either integer or string data type.
+		If both arguments are either integer or string 
+		return the sum of the arguments else return -1.
 
 		Args:
-			arg1:  Any value
-			arg2:  Any value
+			input1:  Argument 1 sould be either integer or string.
+			input2:  Argument 2 should be either integer or string.
+			Two arguments should be either string or integer data type.
 
 		Returns:
-			sum of arguments or if both argument have
-			different data types return value is -1.
+			If two arguments are either integer or string return
+			value is sum of two arguments else return value is -1.
 	"""
 
 	if (type(arg1) != type(arg2)): 
