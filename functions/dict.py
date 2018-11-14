@@ -8,12 +8,15 @@ def char_dict (string):
 			occurrence will be counted.
 
         Returns:
-			No return value.
+			Returns dictionary having count of each character
+			in the given stringi.
     """
 	char_dic = dict()
 	for char in string:
 		if char not in char_dic:
 			char_dic[char] = string.count(char)
-	print(char_dic)
+	return char_dic
+
 string = input("Enter a string : ")
-char_dict (string)
+char_dic = char_dict (string)
+print (char_dic)
