@@ -9,9 +9,9 @@ def char_dict (string):
 
         Returns:
 			Returns dictionary having count of each character
-			in the given stringi.
+			in the given string.
     """
-	char_dic = dict()
+	char_dic = {}
 	for char in string:
 		if char not in char_dic:
 			char_dic[char] = string.count(char)
