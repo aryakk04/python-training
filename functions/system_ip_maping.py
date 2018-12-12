@@ -13,17 +13,15 @@ def get_system_to_ip_map(system_names,system_ips):
 		Returns list of tuple having system name and 
 		corresponding system IP.
     """
-
 	system_ip_map = []
-	if len(system_names) != len(system_ips) :
-		system_no = min(len(system_names),len(system_ips))
-	else:
-		system_no = len(system_names)
+	if (len(system_names) == 1 or len(system_ips) == 1):
+		print "List is empty!!! Please enter some data"
+		return  system_ip_map
+	system_no = min(len(system_names),len(system_ips))
 	for x in range (0,system_no):
 		system_ip_map += [(system_names[x],system_ips[x])]
 	return system_ip_map
 
-#number = input("Enter the number of systems : ")
 list = raw_input("Enter system names seperated by coma : ")
 system_names = list.split(',')
 list = raw_input("Enter system IPs seperated by coma : ")
