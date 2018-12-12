@@ -12,7 +12,15 @@ def get_system_to_ip_map(system_names,system_ips):
         Returns:
             Returns list of tuple having system name and
             corresponding system IP.
+
+            If both the list or any one of the list is empty
+            this function returns empty list
+
+            If the two input argument is uneven length, the
+            list of tuples will be return with
+            length = min(len(system_names), len(system_ips))
         """
+
         system_ip_map = []
         if not system_names or not system_ips:
                 print "List is empty!!! Please enter some data"
