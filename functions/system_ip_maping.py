@@ -17,6 +17,8 @@ def get_system_to_ip_map(system_names,system_ips):
 	system_ip_map = []
 	if len(system_names) != len(system_ips) :
 		system_no = min(len(system_names),len(system_ips))
+	else:
+		system_no = len(system_names)
 	for x in range (0,system_no):
 		system_ip_map += [(system_names[x],system_ips[x])]
 	return system_ip_map
